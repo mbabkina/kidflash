@@ -1,0 +1,31 @@
+.table {
+  border-collapse: collapse;
+  margin-left: 450px;
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+
+.cell {
+  border-style: groove;
+  border-width: 1px;
+  padding: 5px;
+}
+
+.cell-head {
+  border-style: groove;
+  border-width: 1px 1px 3px 1px;
+  padding: 5px;
+}
+
+.input {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 0px;
+}
+
+::placeholder {
+  text-align: center;
+}

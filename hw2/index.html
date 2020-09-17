@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>HW_2</title>
+  </head>
+
+  <body>
+    <!-- Table -->
+    <table class="table">
+      <thead>
+        <tr>
+          <th class="cell-head">Ім'я</th>
+          <th class="cell-head">Прізвище</th>
+          <th class="cell-head">Телефон</th>
+          <th class="cell-head">Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="cell">Іван</td>
+          <td class="cell">Іванов</td>
+          <td class="cell">+38 011 234567</td>
+          <td class="cell">ivan@testmail.com</td>
+        </tr>
+        <tr>
+          <td class="cell">Петро</td>
+          <td class="cell">Петров</td>
+          <td class="cell">+38 011 234567</td>
+          <td class="cell">petro@testmail.com</td>
+        </tr>
+        <tr>
+          <td class="cell">Михайло</td>
+          <td class="cell">Михайлов</td>
+          <td class="cell">+38 011 234567</td>
+          <td class="cell">mykha@testmail.com</td>
+        </tr>
+        <tr>
+          <td class="cell">Соломія</td>
+          <td class="cell">Вітвіцька</td>
+          <td class="cell">+38 011 234567</td>
+          <td class="cell">miia@testmail.com</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Form to complete -->
+    <div class="input">
+      <input type="text" placeholder="Введіть ім'я" />
+      <input type="text" placeholder="Введіть прізвище" />
+    </div>
+
+    <div class="input">
+      <p><b>Оберіть стать:</b></p>
+      <p><input name="gender" type="radio" checked /> <span>Чоловіча</span></p>
+      <p><input name="gender" type="radio" /> <span>Жіноча</span></p>
+    </div>
+
+    <div class="input">
+      <textarea placeholder="Задайте Ваше питання"></textarea>
+    </div>
+
+    <div class="input">
+      <select>
+        <option disabled="disabled" selected="selected">Оберіть місто</option>
+        <option>Київ</option>
+        <option>Запоріжжя</option>
+        <option>Полтава</option>
+        <option>Львів</option>
+        <option>Харків</option>
+      </select>
+    </div>
+
+    <div class="input">
+      <p><b>Оберіть мову</b></p>
+      <p><input type="checkbox" /> <span>Українська</span></p>
+      <p><input type="checkbox" /> <span>Російська</span></p>
+      <p><input type="checkbox" /> <span>Англійська</span></p>
+    </div>
+
+    <input type="submit" value="Відправити" />
+  </body>
+</html>
