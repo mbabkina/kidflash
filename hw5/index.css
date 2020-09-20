@@ -1,10 +1,10 @@
 * {
   box-sizing: border-box;
-  font-family: "Lato", sans-serif;
 }
 
 body {
   font-size: 14px;
+  font-family: "Lato", sans-serif;
 } /* font is not added to a page */
 
 .wrapper-app-download {
@@ -199,6 +199,7 @@ footer {
   line-height: 14px;
   color: #101010;
   max-width: 122px;
+  text-decoration: none;
 }
 
 .social-network {
