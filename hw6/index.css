@@ -1,0 +1,499 @@
+@font-face {
+  font-family: "Avenir";
+  src: url("fonts/AvenirNextLTPro-HeavyCn.eot");
+  src: local("☺"), url("fonts/AvenirNextLTPro-HeavyCn.woff") format("woff"),
+    url("fonts/AvenirNextLTPro-HeavyCn.ttf") format("truetype"),
+    url("fonts/AvenirNextLTPro-HeavyCn.svg") format("svg");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("fonts/AvenirNextLTPro-MediumCn.eot");
+  src: local("☺"), url("fonts/AvenirNextLTPro-MediumCn.woff") format("woff"),
+    url("fonts/AvenirNextLTPro-MediumCn.ttf") format("truetype"),
+    url("fonts/AvenirNextLTPro-MediumCn.svg") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("fonts/AvenirLTStd-Roman.eot");
+  src: local("☺"), url("fonts/AvenirLTStd-Roman.woff") format("woff"),
+    url("fonts/AvenirLTStd-Roman.ttf") format("truetype"),
+    url("fonts/AvenirLTStd-Roman.svg") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("fonts/AvenirLTStd-Book.eot");
+  src: local("☺"), url("fonts/AvenirLTStd-Book.woff") format("woff"),
+    url("fonts/AvenirLTStd-Book.ttf") format("truetype"),
+    url("fonts/AvenirLTStd-Book.svg") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("fonts/aghelvetica_bold.eot");
+  src: local("☺"), url("fonts/aghelvetica_bold.woff") format("woff"),
+    url("fonts/aghelvetica_bold.ttf") format("truetype"),
+    url("fonts/aghelvetica_bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("fonts/aghelvetica.eot");
+  src: local("☺"), url("fonts/aghelvetica.woff") format("woff"),
+    url("fonts/aghelvetica.ttf") format("truetype"),
+    url("fonts/aghelvetica.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #f6fafd 0%, #ffffff 19.4%);
+  color: #4b5d68;
+
+  font-family: "Avenir";
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h5,
+h6 {
+  font-family: "Helvetica";
+  font-weight: 700;
+  color: #212353;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  margin-top: 56px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 70%;
+}
+
+.nav-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 40%;
+}
+
+.nav-item {
+  font-weight: 500;
+  font-size: 1.125em;
+  line-height: 1.63em;
+}
+
+.bold-it {
+  font-weight: 800;
+}
+
+.logo {
+  width: 49px;
+  height: 35px;
+}
+
+.demo {
+  margin-left: auto;
+  font-weight: 800;
+  color: #212353;
+  padding: 17px 29px;
+
+  background: #ffffff;
+  box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+  border: 0px;
+  border-radius: 50px;
+}
+
+.forward-arrow {
+  width: 20px;
+  height: 14px;
+  margin-left: 20px;
+}
+
+.wrapper-1 {
+  margin-left: 240px;
+  margin-top: 147px;
+  position: relative;
+  width: 80%;
+  height: 565px;
+}
+
+.main-title {
+  font-size: 5.5em;
+  width: 60%;
+  margin-bottom: 50px;
+  margin-top: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.desc {
+  font-size: 1.125em;
+  line-height: 160%;
+}
+
+.text1 {
+  max-width: 25%;
+  position: relative;
+  z-index: 2;
+}
+
+.image-1 {
+  position: absolute;
+  width: 885px;
+  height: 468px;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.more {
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 1.125em;
+  line-height: 160%;
+
+  padding: 16px 37px;
+  border-radius: 50px;
+  border: 0px;
+}
+
+.violet {
+  background: #9c69e2;
+  margin-top: 50px;
+}
+.wrapper-2 {
+  margin-left: 240px;
+  margin-top: 95px;
+  width: 70%;
+  height: 560px;
+  border: 0px;
+  background: rgba(240, 99, 184, 0.15);
+  border-radius: 50px;
+  position: relative;
+}
+
+.text2-wrapper {
+  position: absolute;
+  top: 125px;
+  left: 550px;
+}
+.sub-title {
+  font-size: 2.5em;
+  line-height: 130%;
+  width: 85%;
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+
+.text2 {
+  width: 85%;
+}
+
+.img-2 {
+  width: 477px;
+  height: 504px;
+}
+
+.wrapper-features {
+  margin-top: 150px;
+  margin-left: 220px;
+  width: 70%;
+}
+
+.features-t {
+  font-size: 2.5em;
+  line-height: 130%;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 0;
+}
+
+.text3 {
+  max-width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 70px;
+}
+
+.feat-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.feat-item {
+  width: 45%;
+  position: relative;
+  margin-bottom: 105px;
+}
+
+.feat-text {
+  position: absolute;
+  left: 50%;
+}
+
+.feat-img {
+  width: 235px;
+}
+
+.feat-title {
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 130%;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.feat-desc {
+  line-height: 160%;
+}
+.more-text {
+  font-weight: 900;
+  line-height: 160%;
+  color: #212353;
+  letter-spacing: 0.005em;
+  display: inline;
+}
+
+.wrapper-3 {
+  background: #9c69e2;
+  border-radius: 50px;
+  border: 0;
+  margin-left: 242px;
+  margin-bottom: 150px;
+  width: 70%;
+  height: 710px;
+  position: relative;
+  z-index: 1;
+}
+
+.feedback-t {
+  margin-top: 0;
+  font-size: 2.5em;
+  line-height: 130%;
+  color: #ffffff;
+  position: absolute;
+  top: 110px;
+  left: 93px;
+}
+
+.feedback-wrapper {
+  background: #ffffff;
+  box-shadow: 0px 20px 0px rgba(156, 105, 226, 0.3);
+  border-radius: 20px;
+  border: 0;
+  position: absolute;
+  top: 250px;
+  left: 93px;
+  height: 45%;
+  width: 85%;
+}
+
+.photo {
+  position: absolute;
+  left: 60px;
+  top: 103px;
+}
+.feedback-text {
+  position: absolute;
+  top: 80px;
+  left: 272px;
+  width: 50%;
+}
+
+.name {
+  font-weight: 900;
+  font-size: 1.125em;
+  line-height: 160%;
+  letter-spacing: 0.005em;
+  color: #212353;
+}
+
+.email {
+  font-weight: 500;
+  font-size: 0.875em;
+  line-height: 160%;
+  letter-spacing: 0.01em;
+  color: #9c69e2;
+}
+
+.feedback {
+  font-size: 1.125em;
+  line-height: 180%;
+  margin-top: 20px;
+  color: #4b5d68;
+}
+
+.end {
+  position: absolute;
+  bottom: 58px;
+  right: 56px;
+  z-index: 2;
+}
+
+.back-arrow {
+  width: 40px;
+  height: 14px;
+  position: absolute;
+  bottom: 58px;
+  right: 116px;
+  z-index: 2;
+}
+
+.dots {
+  position: absolute;
+  left: 93px;
+  bottom: 58px;
+  display: flex;
+  align-items: center;
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: inline-block;
+}
+.dot + .dot {
+  margin-left: 10px;
+}
+
+.pink {
+  background: #f063b8;
+  width: 10px;
+  height: 10px;
+}
+
+footer {
+  position: relative;
+  margin-top: auto;
+  border-top: 2px solid rgba(156, 105, 226, 0.2);
+}
+
+.footer-up {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+.wrapper-btn {
+  margin-left: auto;
+}
+
+.sale-title {
+  font-size: 2.5em;
+  line-height: 130%;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.wrapper-footer {
+  display: flex;
+  flex-direction: row;
+  margin: 150px auto 230px;
+  width: 70%;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.footer-title {
+  line-height: 160%;
+  margin-bottom: 30px;
+  font-size: 1em;
+}
+
+.footer-item {
+  width: 25%;
+}
+
+.item {
+  line-height: 250%;
+  color: #212353;
+}
+
+.logo-name {
+  font-weight: 900;
+  font-size: 1.25em;
+  line-height: 160%;
+  color: #212353;
+  margin-bottom: 67px;
+  margin-left: 20px;
+}
+
+.inline {
+  float: left;
+  margin-right: 20px;
+}
+
+.network {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.pinky {
+  background: #f063b8;
+  margin-right: 30px;
+}
+
+.adress {
+  font-weight: 500;
+  line-height: 180%;
+  letter-spacing: 0.01em;
+  color: #212353;
+  margin-bottom: 10px;
+}
+
+.contact {
+  display: block;
+  line-height: 180%;
+  letter-spacing: 0.01em;
+  color: #212353;
+  text-decoration: none;
+}
+
+.copyright {
+  position: absolute;
+  left: 240px;
+  bottom: 96px;
+  width: 20%;
+
+  font-size: 0.75em;
+  line-height: 180%;
+  letter-spacing: 0.01em;
+  color: #212353;
+}
+
+.contact-us {
+  position: absolute;
+  bottom: 91px;
+  right: 243px;
+}
