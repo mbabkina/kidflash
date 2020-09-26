@@ -77,11 +77,6 @@ h6 {
   font-family: "Helvetica";
   font-weight: 700;
   color: #212353;
-  margin: 0;
-}
-
-p {
-  margin: 0;
 }
 
 .nav-bar {
@@ -145,7 +140,6 @@ p {
   font-size: 5.5em;
   width: 60%;
   margin-bottom: 50px;
-  margin-top: 0;
   position: relative;
   z-index: 2;
 }
@@ -206,7 +200,6 @@ p {
   line-height: 130%;
   width: 85%;
   margin-bottom: 40px;
-  margin-top: 0;
 }
 
 .text2 {
@@ -229,7 +222,6 @@ p {
   line-height: 130%;
   text-align: center;
   margin-bottom: 50px;
-  margin-top: 0;
 }
 
 .text3 {
@@ -265,7 +257,6 @@ p {
   font-weight: 400;
   font-size: 1.5em;
   line-height: 130%;
-  margin-top: 0;
   margin-bottom: 20px;
 }
 
@@ -293,7 +284,6 @@ p {
 }
 
 .feedback-t {
-  margin-top: 0;
   font-size: 2.5em;
   line-height: 130%;
   color: #ffffff;
@@ -412,7 +402,6 @@ footer {
 .sale-title {
   font-size: 2.5em;
   line-height: 130%;
-  margin-top: 0;
   margin-bottom: 20px;
 }
 
@@ -454,9 +443,12 @@ footer {
   margin-right: 20px;
 }
 
-.network {
+.network-img {
   width: 50px;
-  margin-right: 10px;
+}
+
+.network + .network {
+  margin-left: 10px;
 }
 
 .pinky {

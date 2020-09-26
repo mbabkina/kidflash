@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.css"
     />
     <link rel="stylesheet" href="index.css" />
     <title>HW_6</title>
@@ -22,7 +23,11 @@
       </div>
 
       <button class="demo">
-        Request Demo<img class="forward-arrow" src="img/forward-arrow_1.png" />
+        Request Demo<img
+          class="forward-arrow"
+          aria-hidden="true"
+          src="img/forward-arrow_1.png"
+        />
       </button>
     </div>
     <!-- Page 1 -->
@@ -151,10 +156,10 @@
         <span class="dot"></span>
       </div>
 
-      <img src="img/back-arrow.svg" aria-hidden="false" class="back-arrow" />
+      <img src="img/back-arrow.svg" aria-hidden="true" class="back-arrow" />
       <img
         src="img/forward-arrow_2.png"
-        aria-hidden="false"
+        aria-hidden="true"
         class="forward-arrow end"
       />
     </div>
@@ -173,6 +178,7 @@
             Request Demo<img
               class="forward-arrow"
               src="img/forward-arrow_1.png"
+              aria-hidden="true"
             />
           </button>
         </div>
@@ -211,9 +217,15 @@
 
         <div class="footer-item">
           <h6 class="footer-title">Social Media</h6>
-          <a><img class="network" alt="Facevook" src="img/facebook.svg" /></a>
-          <a><img class="network" alt="Instagram" src="img/instagram.svg" /></a>
-          <a><img class="network" alt="Twitter" src="img/twitter.svg" /></a>
+          <a class="network"
+            ><img class="network-img" alt="Facebook" src="img/facebook.svg"
+          /></a>
+          <a class="network"
+            ><img class="network-img" alt="Instagram" src="img/instagram.svg"
+          /></a>
+          <a class="network"
+            ><img class="network-img" alt="Twitter" src="img/twitter.svg"
+          /></a>
         </div>
       </div>
       <p class="copyright">
