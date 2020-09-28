@@ -1,0 +1,65 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin: 40px 40%;
+}
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 50px);
+  grid-auto-rows: 50px;
+  gap: 5px 5px;
+  margin: 0 35%;
+  counter-reset: div;
+}
+
+.grid-element {
+  background-color: gray;
+  text-align: center;
+  padding: 40% 30%;
+}
+.grid-element::after {
+  counter-increment: div;
+  content: counter(div);
+}
+
+.grid-element:nth-last-child(-n + 4) {
+  background-color: royalblue;
+}
+
+.grid-element:nth-child(4n + 3) {
+  background-color: red;
+}
+
+button {
+  text-transform: uppercase;
+  background-color: turquoise;
+  color: whitesmoke;
+  border: 0;
+  border-radius: 20px;
+  padding: 15px 40px;
+  margin-left: 35%;
+  position: relative;
+}
+
+span::before,
+span::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  border-collapse: separate;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  margin-top: 0.5em;
+}
+
+span::before {
+  margin-left: -100%;
+}
+
+span::after {
+  margin-left: 20%;
+}
