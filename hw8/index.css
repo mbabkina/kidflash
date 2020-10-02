@@ -1,0 +1,401 @@
+@font-face {
+  font-family: "BalooBhai";
+  src: url("fonts/BalooBhai-Regular.eot");
+  src: local("☺"), url("fonts/BalooBhai-Regular.woff") format("woff"),
+    url("fonts/BalooBhai-Regular.ttf") format("truetype"),
+    url("fonts/BalooBhai-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  min-width: 1100px;
+  min-height: 600px;
+  font-size: 16px;
+  color: #000000;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  min-width: 1100px;
+  min-height: 600px;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "BalooBhai";
+}
+
+.side-nav {
+  width: 9%;
+  margin: 1.5% 0;
+  padding: 2.5% 0;
+
+  background: #000000;
+  border-radius: 1.25rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.logo {
+  font-family: "BalooBhai";
+
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 6.38rem;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.side-nav-item {
+  width: 1.625rem;
+}
+
+.side-nav :last-child {
+  margin-top: 200%;
+}
+
+.wrap-left {
+  width: 43%;
+}
+
+.course-go {
+  background-color: #000000;
+  border-radius: 0.5rem;
+  border: 0;
+  min-width: 8.5rem;
+
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 0.822rem;
+  padding: 0.82rem 1.5rem;
+}
+
+.wrap-left header {
+  width: 100%;
+  height: 160px;
+  margin-top: 7%;
+  background: #f5f5f7;
+  border-radius: 0.875rem;
+
+  display: flow-root;
+  position: relative;
+}
+
+.wrap-left header h1 {
+  font-weight: normal;
+  font-size: 2.25rem;
+  line-height: 3.56rem;
+
+  margin-top: 6%;
+  margin-left: 4.5%;
+  margin-bottom: 2%;
+}
+
+.greeting {
+  margin-left: 4.5%;
+  line-height: 1.5rem;
+}
+
+.greet-img {
+  height: 120%;
+
+  position: absolute;
+  bottom: 0;
+  right: 15%;
+  overflow-y: visible;
+}
+
+.wrap-current,
+.current,
+.courses-item,
+.duration,
+.score,
+.courses,
+.go-to {
+  display: flex;
+  flex-direction: row;
+}
+
+.wrap-current {
+  align-items: center;
+}
+
+.wrap-courses h2 {
+  font-size: 1.5rem;
+  line-height: 2.375rem;
+  margin-top: 6.5%;
+  margin-bottom: 2.5%;
+}
+.current,
+.courses-item {
+  background: #f5f5f7;
+  border-radius: 0.875rem;
+  height: 80px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.current-progress {
+  position: relative;
+}
+
+.progress-value {
+  position: absolute;
+  top: 25%;
+  left: 15%;
+}
+
+.go-to {
+  width: 17%;
+  margin-left: auto;
+
+  justify-content: space-between;
+}
+
+.arrow {
+  width: 40%;
+  margin-top: 25%;
+}
+
+.back {
+  transform: scale(-1, 1);
+  margin-right: 16px;
+}
+
+.courses {
+  width: 70%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.courses-link {
+  text-decoration: none;
+  font-family: "BalooBhai";
+  line-height: 1.625rem;
+  color: #000000;
+  opacity: 0.3;
+}
+
+.courses :first-child {
+  opacity: 1;
+}
+
+.current {
+  width: 80%;
+  margin-top: 24px;
+}
+
+.courses-item {
+  width: 100%;
+}
+
+.courses-item + .courses-item {
+  margin-top: 1rem;
+}
+
+.course-title {
+  line-height: 1.625rem;
+  margin-bottom: 1px;
+}
+
+.course-author {
+  font-size: 0.812rem;
+  line-height: 0.938rem;
+}
+
+.img-back {
+  background: #ffffff;
+  border-radius: 0.75rem;
+  width: 64px;
+  height: 64px;
+}
+
+.course-img {
+  width: 50%;
+  height: 50%;
+  margin: 25%;
+}
+
+.duration {
+  align-items: center;
+}
+
+.clock,
+.flame {
+  margin-right: 8px;
+}
+
+.score {
+  align-items: baseline;
+}
+
+.wrap-right {
+  width: 30%;
+}
+
+.wrap-right header {
+  margin-top: 12%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrap-search {
+  width: 70%;
+  height: 40px;
+  position: relative;
+}
+.search {
+  width: 100%;
+  height: 100%;
+  background: #f5f5f7;
+  border-radius: 0.5rem;
+  border: 0;
+}
+
+.search-img {
+  position: absolute;
+  left: 4%;
+  top: 25%;
+}
+
+.wrap-notif {
+  position: relative;
+}
+
+.notif {
+  height: 2.3rem;
+  width: 1.9rem;
+}
+
+.profile {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.arrow-down {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+
+  margin-bottom: 25%;
+}
+
+.wrap-stat-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.stat {
+  box-sizing: border-box;
+  width: 47%;
+  height: 95px;
+  background: #f5f5f7;
+  border-radius: 0.875rem;
+  padding-left: 2.2rem;
+}
+
+.stat-count {
+  float: left;
+  font-family: "BalooBhai";
+  font-size: 4rem;
+  line-height: 6.375rem;
+  margin-right: 0.75rem;
+}
+
+.stat-text {
+  line-height: 1.5rem;
+  margin-top: 1.7rem;
+}
+
+.stat-title {
+  font-size: 1.5rem;
+  line-height: 2.375rem;
+  margin-bottom: 1rem;
+}
+
+.wrap-stat-head {
+  display: flex;
+  flex-direction: row;
+
+  margin-bottom: 2.5rem;
+}
+
+.stat-head {
+  font-family: "BalooBhai";
+  line-height: 1.625rem;
+  color: #000000;
+  opacity: 0.3;
+}
+
+.wrap-stat-head :first-child {
+  opacity: 1;
+}
+
+.stat-head + .stat-head {
+  margin-left: 1.5rem;
+}
+
+.wrap-stat-head select {
+  margin-left: auto;
+  background: #f5f5f7;
+  border-radius: 0.5rem;
+  border: 0;
+  padding: 0.5rem 1rem;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.stat-graph {
+  width: 100%;
+  height: 50%;
+}
+
+.wrap-more {
+  background: #f5f5f7;
+  border-radius: 0.875rem;
+  margin-top: 3.125rem;
+  position: relative;
+  width: 100%;
+  height: 20%;
+
+  padding-left: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.more-img {
+  position: absolute;
+  right: 10%;
+  top: 10%;
+}
+
+.more-title {
+  font-size: 1.5rem;
+  line-height: 2.375rem;
+  margin-bottom: 3px;
+}
+
+.more-text {
+  max-width: 42%;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+}
