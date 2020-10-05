@@ -45,8 +45,8 @@ button {
   position: relative;
 }
 
-span::before,
-span::after {
+.double-lines::before,
+.double-lines::after {
   content: "";
   position: absolute;
   width: 80%;
@@ -54,6 +54,7 @@ span::after {
   border-top: 1px solid grey;
   border-bottom: 1px solid grey;
   margin-top: 0.5em;
+  padding: 1.5px 0;
 }
 
 span::before {
