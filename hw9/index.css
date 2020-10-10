@@ -201,7 +201,7 @@ header > .store-wrapper {
   z-index: 2;
 }
 
-.notif > time {
+.notif > .time {
   font-size: 1.04rem;
   font-weight: 700;
   line-height: 1.375rem;
@@ -366,7 +366,7 @@ header > .store-wrapper {
 }
 
 @media (max-width: 375px) {
-  .notif > time {
+  .notif > .time {
     font-size: 11.5188px;
     line-height: 15px;
     margin-bottom: 9px;
