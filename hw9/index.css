@@ -51,10 +51,9 @@ header {
 }
 
 .logo-img {
-  width: 25px;
-  height: 25px;
   margin-right: 3px;
 }
+
 .logo-text {
   font-family: "ProductSans-Regular";
   font-size: 1.5rem;
@@ -114,7 +113,7 @@ header > .store-wrapper {
   overflow: hidden;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 376px) {
   header {
     padding: 0;
     height: 525px;
@@ -141,7 +140,7 @@ header > .store-wrapper {
     width: 90%;
   }
   header > .store-wrapper {
-    width: 90%;
+    width: 100%;
     padding-left: 20px;
   }
   header {
@@ -157,7 +156,14 @@ header > .store-wrapper {
 
 @media (max-width: 768px) {
   header > .store-wrapper {
-    width: 0%;
+    width: 80%;
+  }
+}
+
+@media (max-width: 321px) {
+  header > .store-wrapper {
+    width: 100%;
+    padding-left: 2px;
   }
 }
 
@@ -241,12 +247,6 @@ header > .store-wrapper {
 }
 
 .toggle {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
-.toggle {
   position: relative;
   display: inline-block;
   width: 28px;
@@ -258,8 +258,7 @@ header > .store-wrapper {
   border-radius: 104px;
   outline: none;
   cursor: pointer;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+
   appearance: none;
 }
 
@@ -390,6 +389,9 @@ header > .store-wrapper {
     top: 198px;
     left: 93px;
   }
+  .wrap-exp {
+    margin-top: 20px;
+  }
 }
 
 /* media queries for text elements are below */
@@ -426,7 +428,7 @@ header > .store-wrapper {
   position: relative;
 
   margin-bottom: 40px;
-  margin-right: 20%;
+  margin-right: 15%;
 }
 
 .interface-img {
@@ -504,7 +506,7 @@ header > .store-wrapper {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: top;
+  align-items: flex-start;
 }
 
 .feat {
@@ -565,7 +567,7 @@ header > .store-wrapper {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  width: (100% +150px);
+  width: calc(100% +150px);
   overflow: hidden;
   margin-left: -180px;
 }
@@ -684,6 +686,11 @@ header > .store-wrapper {
   }
 }
 
+@media (max-width: 321px) {
+  .arrrow {
+    right: 0.5px;
+  }
+}
 /* Partners */
 .wrap-partners {
   min-height: 278px;
@@ -771,6 +778,17 @@ header > .store-wrapper {
     margin-left: 2%;
   }
 }
+
+@media (max-width: 321px) {
+  .wrap-txt > .store-wrapper {
+    width: 100%;
+    padding-left: 2px;
+  }
+
+  .store + .store {
+    margin-left: 10px;
+  }
+}
 /* Footer */
 
 footer {
@@ -788,8 +806,15 @@ footer {
 
 footer > .logo-wrapper {
   margin: 0;
-
   flex-basis: 99px;
+}
+
+.white {
+  fill: #ffffff;
+}
+
+.blank {
+  fill: none;
 }
 footer > .logo-wrapper > .logo-text {
   color: #ffffff;
