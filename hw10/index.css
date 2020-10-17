@@ -61,7 +61,7 @@
 
 .input-group-prepend,
 .input-group,
-textarea.form-control {
+input.form-control {
   height: 29px;
 }
 .input-group-text {
