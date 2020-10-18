@@ -1,0 +1,42 @@
+$blue: #18A0FB
+$orange: #FF3E1D
+$bg-grey:rgba(224, 224, 224, 0.3)
+$font-grey:#878787
+$font-black: #2C2C2C
+$white: #ffffff
+$green: #00D200
+$font-bg: normal 500 15px/18px 'Inter'
+$font-sm: normal 500 13px/16px 'Inter'
+
+body
+    font-family: 'Inter', sans-serif
+
+.main-wrapper
+    display: grid
+    grid-template-columns: repeat(2, auto)
+    row-gap: 70px
+    column-gap: 130px
+    padding-left: 20px
+    padding-top: 20px
+
+.container
+    width: 870px
+
+.positioned
+    margin-top: 40px
+
+.grey
+    stroke: $font-grey
+
+.black
+    stroke: $font-black
+
+.blue
+    stroke: $blue
+
+.white
+    stroke: #white
+
+@import buttons.sass
+@import tabs.sass
+@import tags.sass

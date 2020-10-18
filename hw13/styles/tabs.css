@@ -1,0 +1,18 @@
+.tab-wrap-lg {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.btn-group {
+  border-radius: 5px;
+}
+.btn-group .btn-group__icon {
+  height: 48px;
+  background-color: #4CAF50;
+  border: 1px solid green;
+  color: white;
+  padding: 10px 24px;
+  cursor: pointer;
+  float: left;
+}
