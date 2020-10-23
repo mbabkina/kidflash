@@ -2,6 +2,7 @@ body {
   font-family: "Lato", sans-serif;
   position: relative;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 @font-face {
@@ -87,6 +88,8 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: relative;
+  z-index: 2;
 }
 
 header > .store-wrapper {
@@ -98,7 +101,7 @@ header > .store-wrapper {
 }
 
 .store + .store {
-  margin-left: 28px;
+  margin-left: 20px;
 }
 
 .store > img {
@@ -109,11 +112,23 @@ header > .store-wrapper {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 1;
+  z-index: 0;
   overflow: hidden;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 1025px) {
+  header > .store-wrapper {
+    width: 35%;
+  }
+}
+
+@media (max-width: 768px) {
+  header > .store-wrapper {
+    width: 80%;
+  }
+}
+
+@media (max-width: 426px) {
   header {
     padding: 0;
     height: 525px;
@@ -142,24 +157,12 @@ header > .store-wrapper {
   header > .store-wrapper {
     width: 100%;
     padding-left: 20px;
+    padding-bottom: 20px;
   }
   header {
-    height: 525px;
+    height: auto;
   }
 }
-
-@media (max-width: 1025px) {
-  header > .store-wrapper {
-    width: 35%;
-  }
-}
-
-@media (max-width: 768px) {
-  header > .store-wrapper {
-    width: 80%;
-  }
-}
-
 @media (max-width: 321px) {
   header > .store-wrapper {
     width: 100%;
@@ -336,6 +339,7 @@ header > .store-wrapper {
   color: #00adee;
   text-decoration: none;
   margin-bottom: 25px;
+  display: flow-root;
 }
 
 @media (max-width: 1000px) {
@@ -364,7 +368,7 @@ header > .store-wrapper {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 426px) {
   .notif > .time {
     font-size: 11.5188px;
     line-height: 15px;
@@ -391,6 +395,9 @@ header > .store-wrapper {
   }
   .wrap-exp {
     margin-top: 20px;
+  }
+  .exp-media {
+    width: 100vw;
   }
 }
 
@@ -453,7 +460,27 @@ header > .store-wrapper {
   visibility: hidden;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 1000px) {
+  .txt-interface {
+    width: 90%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrap-phone {
+    margin-left: 20%;
+  }
+}
+@media (max-width: 426px) {
+  .exit {
+    right: -10px;
+  }
+}
+@media (max-width: 376px) {
+  .wrap-phone {
+    margin-left: 10%;
+  }
   .wrap-interface {
     background-position-y: bottom;
   }
@@ -468,14 +495,11 @@ header > .store-wrapper {
     width: 91px;
   }
 }
-
-@media (max-width: 1000px) {
-  .txt-interface {
-    width: 90%;
-    text-align: center;
+@media (max-width: 321px) {
+  .wrap-phone {
+    margin-left: 0;
   }
 }
-
 /* Features */
 .wrap-features {
   height: auto;
@@ -567,7 +591,7 @@ header > .store-wrapper {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  width: calc(100% +150px);
+  width: calc(100% +100px);
   overflow: hidden;
   margin-left: -180px;
 }
@@ -677,12 +701,16 @@ header > .store-wrapper {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 376px) {
   .feedback-item:nth-of-type(4) {
     display: none;
   }
   .feedback-item:last-of-type {
     display: none;
+  }
+  .arrrow,
+  .back {
+    top: 110px;
   }
 }
 
@@ -756,16 +784,20 @@ header > .store-wrapper {
   width: 80%;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1025px) {
   .desc-txt {
     width: 90%;
     margin-left: 5%;
   }
   .wrap-txt {
     text-align: center;
+    margin-left: 30%;
   }
   .wrap-txt > .store-wrapper {
     width: 85%;
+  }
+  .closer-img {
+    margin-left: 10%;
   }
 }
 
@@ -779,6 +811,15 @@ header > .store-wrapper {
   }
 }
 
+@media (max-width: 426px) {
+  .wrap-txt,
+  .closer-img {
+    margin-left: 0;
+  }
+  .closer-img {
+    padding-top: 10px;
+  }
+}
 @media (max-width: 321px) {
   .wrap-txt > .store-wrapper {
     width: 100%;
