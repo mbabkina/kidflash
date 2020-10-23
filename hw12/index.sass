@@ -15,10 +15,13 @@ body
     font-family: 'Roboto', sans-serif
     color: $main-color
     font-size: 16px
+    overflow-x: hidden
 
 .nav
     padding-top: 12px
     margin-bottom: 243px
+    position: relative
+    z-index: 5
 
 .nav-link
     text-decoration: none
@@ -40,11 +43,16 @@ body
     color: #FFFFFF
     font-weight: 500
 
+.dark-blue:visited
+    color: $main-color
+
 .nav-item
     .dark-blue
         font-size: 12px
         line-height: 18px
         padding: $pad-btn-md
+    .dark-blue:hover
+        color: $main-color
 
 h1, h2, h5
     color: $dark-title
@@ -60,19 +68,22 @@ header
     color: $head-color
     .row
         position: relative
+        .text-wrapper
+            z-index: 2
+            p
+                font-size: 18px
+                line-height: 30px
+            .btn-wrapper
+                margin-top: 69px
+                margin-bottom: 390px
+                .btn + .btn
+                    margin-left: 30px
+                .btn
+                    padding: $pad-btn-lg
 
-    .text-wrapper
-        z-index: 2
-        p
-            font-size: 18px
-            line-height: 30px
-    .btn-wrapper
-        margin-top: 69px
-        margin-bottom: 390px
-        .btn + .btn
-            margin-left: 30px
-        .btn
-            padding: $pad-btn-lg
+.btn-wrapper
+    .dark-blue:hover
+        color: $main-color
 
 .image-main
     width: $img-lg
@@ -127,7 +138,8 @@ h5
 .text-wrapper
     .btn
         padding: $pad-btn-md
-
+    .dark-blue:hover
+        color: $main-color
 .bottom-wrapper
     position: relative
     background: rgba(231,236,255,0.5)
@@ -157,6 +169,8 @@ h5
         line-height: 24px
         color: #5D6970
         margin-bottom: 9px
+    .dark-blue:hover
+        color: $main-color
 
 .bottom-wrapper:before
     content: ""

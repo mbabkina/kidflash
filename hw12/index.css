@@ -2,11 +2,14 @@ body {
   font-family: "Roboto", sans-serif;
   color: #6F7CB2;
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 .nav {
   padding-top: 12px;
   margin-bottom: 243px;
+  position: relative;
+  z-index: 5;
 }
 
 .nav-link {
@@ -33,10 +36,17 @@ body {
   font-weight: 500;
 }
 
+.dark-blue:visited {
+  color: #6F7CB2;
+}
+
 .nav-item .dark-blue {
   font-size: 12px;
   line-height: 18px;
   padding: 4px 55px;
+}
+.nav-item .dark-blue:hover {
+  color: #6F7CB2;
 }
 
 h1, h2, h5 {
@@ -57,22 +67,26 @@ header {
 header .row {
   position: relative;
 }
-header .text-wrapper {
+header .row .text-wrapper {
   z-index: 2;
 }
-header .text-wrapper p {
+header .row .text-wrapper p {
   font-size: 18px;
   line-height: 30px;
 }
-header .btn-wrapper {
+header .row .text-wrapper .btn-wrapper {
   margin-top: 69px;
   margin-bottom: 390px;
 }
-header .btn-wrapper .btn + .btn {
+header .row .text-wrapper .btn-wrapper .btn + .btn {
   margin-left: 30px;
 }
-header .btn-wrapper .btn {
+header .row .text-wrapper .btn-wrapper .btn {
   padding: 7px 55px;
+}
+
+.btn-wrapper .dark-blue:hover {
+  color: #6F7CB2;
 }
 
 .image-main {
@@ -138,6 +152,9 @@ h5 {
 .text-wrapper .btn {
   padding: 4px 55px;
 }
+.text-wrapper .dark-blue:hover {
+  color: #6F7CB2;
+}
 
 .bottom-wrapper {
   position: relative;
@@ -172,6 +189,9 @@ h5 {
   line-height: 24px;
   color: #5D6970;
   margin-bottom: 9px;
+}
+.bottom-wrapper .dark-blue:hover {
+  color: #6F7CB2;
 }
 
 .bottom-wrapper:before {
