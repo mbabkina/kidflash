@@ -17,10 +17,19 @@ h1 {
   position: relative;
 }
 
+li:first-of-type,
+li:last-of-type {
+  transform-origin: 50% 0; /* stick to axis Y */
+  animation-duration: 1.2s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
 li:first-of-type {
   background-color: #4c10ae;
-  transform-origin: 50% 0; /* stick to axis Y */
-  animation: animation-left 1.2s ease 0.5s infinite normal;
+  animation-name: animation-left;
+  animation-delay: 0.5s;
 }
 
 @keyframes animation-left {
@@ -40,8 +49,8 @@ li:first-of-type {
 
 li:last-of-type {
   background-color: #ff0000;
-  transform-origin: 50% 0; /* stick to axis Y */
-  animation: animation-right 1.2s ease 0.7s infinite normal;
+  animation-name: animation-right;
+  animation-delay: 0.7s;
 }
 
 @keyframes animation-right {
