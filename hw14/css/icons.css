@@ -1,0 +1,43 @@
+.icon {
+  background: url("../img/css_sprites.png");
+  background-size: 100%;
+  margin: 0 auto;
+}
+
+.bg-reason1 {
+  width: 100px;
+  background-position: 15px 15px;
+}
+
+.bg-reason2 {
+  width: 95px;
+  background-position: 10px -64px;
+}
+
+.bg-reason3 {
+  width: 100px;
+  background-position: 10px -351px;
+}
+
+.bg-reason4 {
+  width: 108px;
+  background-position: 10px -179px;
+}
+
+.bg-adv1 {
+  width: 105px;
+  height: 70px;
+  background-position: 10px -478px;
+}
+
+.bg-adv2 {
+  width: 105px;
+  height: 70px;
+  background-position: 10px -578px;
+}
+
+.bg-adv3 {
+  width: 105px;
+  height: 70px;
+  background-position: 10px -938px;
+}
