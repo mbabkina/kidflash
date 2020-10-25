@@ -5,10 +5,20 @@
     <title>Title</title>
     <link rel="stylesheet" href="css/screen.css">
     <link rel="stylesheet" href="css/fonts.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/icons.css">
 </head>
 <body>
+    <div class="preloader">
+        <div class="preloader__row">
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
+        </div>
+    </div>
 <header>
     <div class="wrapper">
         <img src="img/logo.png" alt="Logo Avtoparktronik" class="logo">
@@ -186,6 +196,47 @@
                 <div class="review-author"><img src="img/review1-ava.jpg" alt="" class="ava"><b>Константин</b><i>г.
                     Днепропетровск</i></div>
             </div>
+            <div class="slide">
+                <img src="img/review1.jpg" alt="" class="main-review-img">
+                <p class="review-text">
+                    Опять долгие ночи в интернете в поисках обзоров и сравнений… Проблема таких устройств что у них либо
+                    дизайн
+                    уродский огромный — в полтора раза больше штатного, а я вообще не люблю заднее зеркало, так как за 3
+                    года
+                    вождения рабочих "каблучков" типа Кангу и Берлинго вообще привык без него обходится, либо тех.
+                    данные
+                    никакие — камеры очень плохого качества… Уже думал что печаль… :( Но вот за пару дней поисков
+                    наткнулся на
+                    то о чем мечтал действительно — HD Recorder. Нашел его у одного из драйвечан, и у других. Все в
+                    восторге от
+                    данного устройства. Качество видео очень хорошее, в машине не видно его вообще, крепления на штатное
+                    зеркало
+                    любой машины, вообщем то что доктор прописал!
+                </p>
+                <div class="review-author"><img src="img/review1-ava.jpg" alt="" class="ava"><b>Константин</b><i>г.
+                        Днепропетровск</i></div>
+            </div>
+            <div class="slide">
+                <img src="img/review1.jpg" alt="" class="main-review-img">
+                <p class="review-text">
+                    Опять долгие ночи в интернете в поисках обзоров и сравнений… Проблема таких устройств что у них либо
+                    дизайн
+                    уродский огромный — в полтора раза больше штатного, а я вообще не люблю заднее зеркало, так как за 3
+                    года
+                    вождения рабочих "каблучков" типа Кангу и Берлинго вообще привык без него обходится, либо тех.
+                    данные
+                    никакие — камеры очень плохого качества… Уже думал что печаль… :( Но вот за пару дней поисков
+                    наткнулся на
+                    то о чем мечтал действительно — HD Recorder. Нашел его у одного из драйвечан, и у других. Все в
+                    восторге от
+                    данного устройства. Качество видео очень хорошее, в машине не видно его вообще, крепления на штатное
+                    зеркало
+                    любой машины, вообщем то что доктор прописал!
+                </p>
+                <div class="review-author"><img src="img/review1-ava.jpg" alt="" class="ava"><b>Константин</b><i>г.
+                        Днепропетровск</i></div>
+            </div>
+
         </div>
         <img src="img/arrow-right.png" alt="" class="arrow-right">
     </div>
@@ -267,7 +318,23 @@
     <div class="wrapper">
     </div>
 </footer>
-<!-- <script src="lib/plugins.js"></script> -->
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+
+<script src="./js/main.js"></script>
+
+<script>
+    window.onload = function () {
+        document.body.classList.add('loaded_hiding');
+        window.setTimeout(function () {
+            document.body.classList.add('loaded');
+            document.body.classList.remove('loaded_hiding');
+        }, 500);
+    }
+</script>
+
 <script>
     // 2. This code loads the IFrame Player API code asynchronously.
     var tag = document.createElement('script');
@@ -310,5 +377,8 @@
         player.stopVideo();
     }
 </script>
+
+
+
 </body>
 </html>
