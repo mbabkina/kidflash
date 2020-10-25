@@ -32,6 +32,7 @@
   background: #fafafa;
   font-family: "HelveticaNeuecRegular";
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -193,9 +194,20 @@ input.form-control {
   justify-content: center;
 }
 
+.img-wrap {
+  position: relative;
+}
+
+.img-wrap:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
 .photo {
-  width: 297px;
-  height: 297px;
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .container {
@@ -229,5 +241,13 @@ input.form-control {
   .media {
     display: flex;
     flex-direction: column;
+  }
+  .reco-wrapper {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .reco-img + .reco-img {
+    margin-left: 0;
   }
 }
